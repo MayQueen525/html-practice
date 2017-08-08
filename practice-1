@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html-practice</title>
+</head>
+<body>
+	<h3>图书畅销榜</h3>
+	<ol>
+		<li>
+			<a title=当我足够好，才会遇见你 href=.../作业1.html>当我足够好，才会遇见你</a>
+		</li>
+		<li>
+			<a title=皮囊 href=.../作业1.html>皮囊</a>
+		</li>
+		<li>
+			<a title=李光耀论中国与世界 href=.../作业1.html>李光耀论中国与世界</a>
+		</li>
+		<li>
+			<a title=乖，摸摸头 href=.../作业1.html>乖，摸摸头</a>
+		</li>
+  <br/>
+	<table border="1">
+		<caption>运费详情</caption>
+		<thead>
+			<tr>
+				<th>区域</th>
+				<th>寄达地</th>
+				<th>首重（元/1000g）</th>
+				<th>续重（元/1000g）</th>
+			</tr>
+		</thead>
+		<tbody>			
+			<tr>
+				<th rowspan=2>一区</th>
+				<td>浙江、上海、江苏</td>
+				<td>6</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>江西、安徽</td>
+				<td>7</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<th>二区</th>
+				<td>吉林、黑龙江、云南</td>
+				<td>10</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>三区</th>
+				<td>新疆、西藏</td>
+				<td>15</td>
+				<td>10</td>
+			</tr>
+		</tbody>
+	</table>
+<br/>
+	<form>
+		<label for="pic">头像</label>
+		<input type="file" id="pic">
+		<br/>
+		<label for="nic">昵称</label>
+		<input type="text" id="nic">
+		<br/>
+		<label for="dee">学历</label>
+		<select id="dee" >
+			<option  selected>大专</option>
+			<option >本科</option>
+		</select>
+		<br/>
+		<label for="sex">性别</label>
+		<span id="sex">
+			<input type="radio" id="male" name="sex" checked>
+			<label for="male">男</label>		
+			<input type="radio" id="female" name="sex">
+			<label for="female">女</label>
+		</span>
+		<br/>
+		<label for="fev">爱好</label>
+		<span id="fev">
+			<input type="checkbox" id="movie" checked>
+			<label for="movie">电影</label>
+			<input type="checkbox" name="fev" id="photo">			
+			<label for="photo">摄影</label>
+			<input type="checkbox" id="music" name="fev">
+			<label for="music">音乐</label>
+			<input type="checkbox" id="read" name="fev" checked>
+			<label for="read">阅读</label>
+		</span>
+		<br/>
+		<label for="sig">签名</label>
+		<textarea  rows="5" cols="40"></textarea>
+		<br/>
+		<button type="submit">保存</button>
+	</form>
+
+
+</body>
+</html>
